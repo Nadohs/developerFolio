@@ -24,7 +24,7 @@ const greeting = {
   // image: require("./assets/images/logov2.png"),
   title: "Hi all, I'm Rich Fox. Welcome to Nadohs Software LLC.",
   subTitle: emoji(
-    "A passionate Mobile First Software Engineer 🚀 with experience of mobile, backend, and web. My specialities include Navitve iOS (Swift/Objective-C), Flask Backend (Python) React-Native (javascript/CSS/HTML)"
+    "I'm a passionate mobile first software engineer 🚀 with experience on mobile, backend, and web. My specialities include Navitve iOS (Swift/Objective-C), Flask Backend (Python) React-Native (javascript/CSS/HTML)"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -50,7 +50,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Experienced engineer with infrastructure background, doing Mobile/Backend/Web development, using AI and LLMs to ugrade your app, building apps from start to finish.",
+  subTitle: "Experienced engineer with an infrastructure background, doing Mobile/Backend/Web development, using AI and LLMs to ugrade your app, and building apps from start to finish.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -60,7 +60,7 @@ const skillsSection = {
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
     emoji(
-      "⚡ Buidling mobile apps, web apps, and full backend services."
+      "⚡ Buidling mobile apps, web apps, and backend services."
     )
   ],
 
