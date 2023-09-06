@@ -448,10 +448,10 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+14158796384",
+    "Discuss a project or have a question? Feel free to reach out to me.",
+  // number: "+14158796384",
   email_address: "fox.ios.dev@gmail.com"
 };
 
