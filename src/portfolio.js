@@ -27,7 +27,7 @@ const greeting = {
     "I'm a passionate mobile first software engineer 🚀 with experience on mobile, backend, and web. My specialities include Navitve iOS (Swift/Objective-C), Flask Backend (Python) React-Native (javascript/CSS/HTML)"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/16mp9cQC0gkXqlnLKPiJ0aZSD149kZmqw/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
