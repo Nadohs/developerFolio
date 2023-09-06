@@ -60,7 +60,7 @@ const skillsSection = {
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     ),
     emoji(
-      "⚡ Buidling mobile apps, web apps, and backend services."
+      "⚡ Enhanching existing projects, as well as building from scratch, mobile apps, web apps, and backend services at both small and large scales."
     )
   ],
 
