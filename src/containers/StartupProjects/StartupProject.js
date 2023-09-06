@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+// import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function StartupProject() {
+export default function StartupProject({ bigProjects }) {
   function openUrlInNewTab(url) {
     if (!url) {
       return;

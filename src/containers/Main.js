@@ -21,6 +21,9 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
+// import bigproject sections for StartupProject
+import {bigProjects, bigProjects2} from "../portfolio";
+
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
@@ -57,7 +60,9 @@ const Main = () => {
             <Education />
             <WorkExperience />
             <Projects />
-            <StartupProject />
+            {/* <StartupProject /> */}
+            <StartupProject bigProjects={bigProjects} />
+            <StartupProject bigProjects={bigProjects2} />
             <Achievement />
             <Blogs />
             <Talks />
@@ -74,3 +79,4 @@ const Main = () => {
 };
 
 export default Main;
+

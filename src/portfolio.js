@@ -240,7 +240,7 @@ const openSource =
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: "Mobile Projects",
   // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -258,24 +258,20 @@ const bigProjects = {
       image: require("./assets/images/projects/project2.png"),
       projectName: "GitKey",
       projectDesc: "A keyboard extension that connects to your GitHub account, to easily allow for copying commit activity for record keeping.",
-      // footerLink: [
-      //   {
-      //     name: "Visit Website",
-      //     url: "http://nextu.se/"
-      //   }
-      // ]
     },
     {
       image: require("./assets/images/projects/project3.png"),
       projectName: "Colorblinder",
       projectDesc: "Real time colorblind video filter overlay, with filtered image exportation features. Built with Core Image and SwiftUI.",
-      // footerLink: [
-      //   {
-      //     name: "Visit Website",
-      //     url: "http://nextu.se/"
-      //   }
-      // ]
-    },
+
+    }],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const bigProjects2 = {
+  title: "Web Projects",
+  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
     {
       image: require("./assets/images/projects/project4.png"),
       projectName: "SteadFast (React Web App + Flask Backend)",
@@ -302,17 +298,10 @@ const bigProjects = {
       image: require("./assets/images/projects/project6.png"),
       projectName: "Chrome Extensions - (JavaScript, CSS, HTML)",
       projectDesc: "Developed chrome extensions for clients for price monitoring, data scraping, and comparisons.",
-      // footerLink: [
-      //   {
-      //     // name: "Visit Website",
-      //     // url: "http://nextu.se/"
-      //   }
-      // ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 // Achievement Section
 // Include certificates, talks etc
 
@@ -475,6 +464,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  bigProjects2,
   achievementSection,
   blogSection,
   talkSection,
