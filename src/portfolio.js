@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/loadingBfs"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -20,10 +20,11 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Rich Fox",
+  // image: require("./assets/images/logov2.png"),
+  title: "Hi all, I'm Rich Fox. Welcome to Nadohs Software LLC.",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Mobile First Software Engineer 🚀 with experience of mobile, backend, and web. My specialities include Navitve iOS (Swift/Objective-C), Flask Backend (Python) React-Native (javascript/CSS/HTML)"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,11 +34,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
+  github: "https://github.com/nadohs",
+  linkedin: "https://www.linkedin.com/in/richard-fox-b3175115/",
+  gmail: "fox.ios.dev@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -49,14 +50,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Experienced engineer with infrastructure background, doing Mobile/Backend/Web development, using AI and LLMs to ugrade your app, building apps from start to finish.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ AI, Nueral Network and LLM integation into apps."),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ),
+    emoji(
+      "⚡ Buidling mobile apps, web apps, and full backend services."
     )
   ],
 
@@ -65,40 +69,24 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
       skillName: "swift",
       fontAwesomeClassname: "fab fa-swift"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "app-dev",
+      fontAwesomeClassname: "fab fa-app-store-ios"
+    },
+        {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "aws",
@@ -109,13 +97,21 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
+
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    
+    {
+      skillName: "npm",
+      fontAwesomeClassname: "fab fa-npm"
     }
+
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,47 +122,60 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Udacity Nanodegree",
+      logo: require("./assets/images/schools/udacity_resized.png"),
+      subHeader: "Udacity Nanodegree Certificate - Deep Learning",
+      duration: "2017 June - Sept",
+      desc: "Completed Udacity Deep Learning Nanodegree. ",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Did course work for 10-20 hours a week over four months to complete program.",
+        "Built a neural network from scratch without library, as well as CNN, RNN, and GANs, with libraries, to complete numerous projects for course.",
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Zhejiang University",
+      logo: require("./assets/images/schools/zhejiang_university.png"),
+      subHeader: "MA - 对外汉语 - Mandarin as a Second Language",
+      duration: "2011 - 2013",
+      desc: "Wrote Thesis 'Measuring what's Lost in Translation.' A research study using linguistic syntax analysis on differences after transating complex texts from English to Mandarin and back again.",
+      descBullets: [
+        "Shadowed teacher at Zhejiang University class. Planned and taught lesson on tone pair practice activities.",
+        "Worked at QuVideo(VivaVideo) during last several months of degree doing iOS Development part time, later full."
+      ]
+    },
+    {
+      schoolName: "University of Florida",
+      logo: require("./assets/images/schools/uf_resized.png"),
+      subHeader: "BA - East Asian Language and Literature: Chinese",
+      duration: "2007 - 2009",
+      desc: "Studied up to level-3 Chinese, Linguistics, and East Asian History, Literature, Poetry, and Religions.",
+      descBullets: [
+        "Completed Summer Study Abroad in Beijing, China. at Tsinghua University.",
+      ]
     }
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
+const techStack = {}  
+//   viewSkillBars: true, //Set it to true to show Proficiency Section
+//   experience: [
+//     {
+//       Stack: "Frontend/Design", //Insert stack or technology you have experience in
+//       progressPercentage: "90%" //Insert relative proficiency in percentage
+//     },
+//     {
+//       Stack: "Backend",
+//       progressPercentage: "70%"
+//     },
+//     {
+//       Stack: "Programming",
+//       progressPercentage: "60%"
+//     }
+//   ],
+//   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+// };
 
 // Work experience section
 
@@ -174,29 +183,47 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Engineering/Owner",
+      company: "Nadohs Software LLC",
+      companylogo: require("./assets/images/companies/nadohs_software.png"),
+      date: "May 2021 – Present",
+      desc: "Worked on large scale iOS podcast project (Skp'd) and flask backend (Python). Additionally worked on React-Native and chrome extension projects for clients.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built Skp’d Smart Podcast Player - (iOS App + Flask Backend) - AI powered podcast player.",
+        "Built SteadFast Smart Task Board - (React Web App + Flask Backend) - LLM and vectorDB integrated project.",
+        "Built Wholesale Tea Guide - (React-Native App + Firebase) - LLM and vectorDB integrated project.",
+        "Built ColorBlinder - (iOS App, Core Image, SwiftUI) - Colorblindness simulator on realtime camera feed, export image comparisons. Uses Core Image and SwiftUI.",
+        "Built GitKey - (iOS Keyboard Extension) - Keyboard extension for iOS that allows you to connect GitHub account and copy commit history time and comments to screen.",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senor Software Engineer - Mobile Infrastructure",
+      company: "LinkedIn",
+      companylogo: require("./assets/images/companies/linkedin_logo.png"),
+      date: "March 2017 – May 2021",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Developed and led migration of a Web-viewer library adopted across all LinkedIn iOS apps.",
+        "Enhanced badging and deep-linking infrastructure; introduced a data-based strategy to optimize app store review requests. This led to an app rating boost from 4.1 to 4.4 in just a week.",
+        "Implemented PKCE and single sign-on authentication through deep-linking.",
+        "Collaborated on the migration of LinkedIn apps to a new in-house unified architecture based on clean architecture concepts.",
+        "Conducted in-depth analyses comparing Swift and Obj-C in terms of build & indexing time, including the creation of tools and experiments.",
+        "Authored and reviewed numerous RFCs, many as part of mobile-infra working group which I outlined and implemented procedures to enhance and optimize the working groups effectiveness.",
+        "Organized and hosted the internal iOS meetup group, giving over 10 presentations on various topics.",
+        "Mentored four engineers, offering guidance on RFC writing, code architecture, code reviews, and overall craftsmanship."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Lead iOS Engineer",
+      company: "Propeller Labs",
+      companylogo: require("./assets/images/companies/propeller.jpeg"),
+      date: "Sep 2014 – Mar 2017",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Led a team of three iOS engineers at Propeller Labs, a web and mobile development consultancy.",
+"Introduced and oversaw the code review process, standardized networking layer architecture, and played a pivotal role in the implementation of best practices and code style guidelines.",
+"Oversaw the open-sourcing of four internal libraries to GitHub with full test coverage and CI/CD integration."
+      ]
     }
   ]
 };
@@ -204,39 +231,83 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
-const openSource = {
+const openSource = 
+{
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/projects/project1.png"),
+      projectName: "Skp'd (iOS + Flask Backend) ",
+      projectDesc: "Intelligent Podcast Player app with near-real time backend waypoint detection. Seemlessly skip passed the fluff content.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://apps.apple.com/us/app/skpd/id1589807665?platform=iphone"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/projects/project2.png"),
+      projectName: "GitKey",
+      projectDesc: "A keyboard extension that connects to your GitHub account, to easily allow for copying commit activity for record keeping.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/projects/project3.png"),
+      projectName: "Colorblinder",
+      projectDesc: "Real time colorblind video filter overlay, with filtered image exportation features. Built with Core Image and SwiftUI.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://nextu.se/"
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/projects/project4.png"),
+      projectName: "SteadFast (React Web App + Flask Backend)",
+      projectDesc: "(In development) A task board application with context-aware LLM/VectorDB based AI subtask suggestions, context summaries based on project documents, and research helper.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://steadfast.herokuapp.com/"
         }
       ]
+    },
+    {
+      image: require("./assets/images/projects/project5.png"),
+      projectName: "Wholesale Tea Guide - (React Web App)",
+      projectDesc: "Created for a client to sell access to a digital database through subscriptions. Features include database lookup, user login, note-taking, and subscription integration.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://wholesale-tea-guide.herokuapp.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/projects/project6.png"),
+      projectName: "Chrome Extensions - (JavaScript, CSS, HTML)",
+      projectDesc: "Developed chrome extensions for clients for price monitoring, data scraping, and comparisons.",
+      // footerLink: [
+      //   {
+      //     // name: "Visit Website",
+      //     // url: "http://nextu.se/"
+      //   }
+      // ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -286,29 +357,40 @@ const achievementSection = {
       ]
     },
 
+    // {
+    //   title: "PWA Web App Developer",
+    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //   image: require("./assets/images/pwaLogo.webp"),
+    //   imageAlt: "PWA Logo",
+    //   footerLink: [
+    //     {name: "Certification", url: ""},
+    //     {
+    //       name: "Final Project",
+    //       url: "https://pakistan-olx-1.firebaseapp.com/"
+    //     }
+    //   ]
+    // }
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      image: require("./assets/images/projects/project2.png"),
+      title: "GitKey",
+      subtitle: "A keyboard extension that connects to your GitHub account, to easily allow for copying commit activity for record keeping.",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          // name: "Visit Website",
+          // url: "http://nextu.se/"
         }
       ]
-    }
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  // subtitle:
+  //   "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -331,16 +413,22 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
+  // subtitle: emoji(
+  //   "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  // ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Generic Table View Controllers",
+      subtitle: "2017 Forward Swift Conference",
+      slides_url: "https://www.youtube.com/watch?v=x-xtHXfBGTk&ab_channel=ForwardJS",
+      event_url: "https://www.youtube.com/watch?v=x-xtHXfBGTk&ab_channel=ForwardJS"
+    },
+    {
+      title: "Cast-Free Arithmetic in Swift",
+      subtitle: "2015 - Realm Swift Meetup",
+      slides_url: "https://academy.realm.io/posts/richard-fox-casting-swift-2/",
+      event_url: "https://academy.realm.io/posts/richard-fox-casting-swift-2/"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -356,25 +444,25 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+14158796384",
+  email_address: "fox.ios.dev@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
