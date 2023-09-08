@@ -57,12 +57,13 @@ const Main = () => {
             <Greeting />
             <Skills />
             <StackProgress />
-            <Education />
             <WorkExperience />
+            
             <Projects />
             {/* <StartupProject /> */}
             <StartupProject bigProjects={bigProjects} />
             <StartupProject bigProjects={bigProjects2} />
+            <Education />
             <Achievement />
             <Blogs />
             <Talks />
